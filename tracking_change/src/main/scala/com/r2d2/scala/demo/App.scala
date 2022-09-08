@@ -18,7 +18,8 @@ object App {
     val rdd_in_1 = sc.wholeTextFiles(s"file:///home/ec2-user/people_jan", 10);
     val rdd_in_2 = sc.wholeTextFiles(s"file:///home/ec2-user/people_feb", 10);
 
-    val bal = rdd_in_1.map{row =>
+    val bal = rdd_in_1.map{path_data =>
+      path_data.
 //      val fields = row.
 //      Movie(fields(0).toInt, fields(1), fields(2).toDouble)
     }
